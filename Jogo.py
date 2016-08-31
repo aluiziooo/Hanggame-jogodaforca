@@ -32,13 +32,6 @@ def salvarrecord(nome,pont):
     if len(ranking) != 0:
         posicao -= 1
         ranking.insert(posicao,jogador)
-        """for j in range(len(ranking)):
-            if jogador['pont'] > ranking[j]['pont']:
-                ranking.insert(j,jogador)
-                break
-            z += 1
-        if z == len(ranking):
-            ranking.append(jogador)"""
             
             
     else:
@@ -91,28 +84,6 @@ def lerpartidassalvas():
     arquivo.close()
     partidas.append(salvos)
     return partidas
-"""def continuarpartida(partidas,escolha,qtddejogos):
-    if escolha in qtddejogos:
-        clear()
-        while True:
-            palavrachave = input("digite a sua palavra chave!")
-            clear()
-            if palavrachave == partidas[joguinho]['PC']:
-                partida = partidas[joguinho]
-                pontos = partida['pontos']
-                acertos = partida['acertos']
-                palavras  = partida['palavras']
-                dificuldade = partida['dificuldade']
-                vidas = partida['vidas']
-                letras = partida['letras']
-                palavra = partida['palavra']
-                jogo.continuarjogo(pontos,acertos,palavras,dificuldade,vidas,palavra,letras,partidas)
-            else:
-                clear()
-                print("Palavra chave errada!!\n\n v - para voltar ao menu")
-                op = input(">")
-                if op == "v" or "V":
-                    return 0"""
     
 #RETORNA O BOLEANO PARA A VISIBILIDADE CERTA DO MENU
 def retornaboleanodobolado():
